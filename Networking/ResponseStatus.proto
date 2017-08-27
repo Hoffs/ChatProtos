@@ -1,1 +1,12 @@
-﻿
+﻿syntax = "proto3";
+package ChatProtos.Networking;
+
+enum ResponseStatus {
+	SUCCESS = 0;
+	ERROR = 1;
+	FORBIDDEN = 2;
+	CREATED = 3;
+	BAD_REQUEST = 4;
+	NOT_FOUND = 5;
+	UNAUTHORIZED = 6;
+}

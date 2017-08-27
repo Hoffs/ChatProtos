@@ -4,11 +4,11 @@ package ChatProtos.Networking;
 enum RequestType {
 	LOGIN = 0;
 	LOGOUT = 1;
-	JOIN = 2;
-	LEAVE = 3;
-	BAN = 4;
-	KICK = 5;
-	UPDATE_DISPLAY = 6;
+	JOIN_CHANNEL = 2;
+	LEAVE_CHANNEL = 3;
+	BAN_USER = 4;
+	KICK_USER = 5;
+	UPDATE_DISPLAY_NAME = 6;
 	ADD_ROLE = 7;
 	REMOVE_ROLE = 8;
 }

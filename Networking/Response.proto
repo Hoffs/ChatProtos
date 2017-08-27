@@ -1,0 +1,10 @@
+syntax = "proto3";
+package ChatProtos.Networking;
+
+import "ResponseStatus.proto";
+
+message ResponseMessage {
+	bytes message = 1;
+	ResponseStatus status = 2;
+}
+// Maybe include RequestType too?
