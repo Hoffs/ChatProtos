@@ -1,0 +1,10 @@
+syntax = "proto3";
+package ChatProtos.Data;
+
+enum Role {
+	OWNER = 0;
+	ADMIN = 1;
+	MODERATOR = 2;
+	USER = 3;
+	CUSTOM = 4;
+}

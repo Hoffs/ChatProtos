@@ -11,4 +11,6 @@ enum RequestType {
 	UPDATE_DISPLAY_NAME = 6;
 	ADD_ROLE = 7;
 	REMOVE_ROLE = 8;
+	CHAT_MESSAGE = 9;
+	USER_INFO = 10;
 }

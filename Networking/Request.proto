@@ -1,0 +1,9 @@
+syntax = "proto3";
+package ChatProtos.Networking;
+
+import "Networking/RequestType.proto";
+
+message RequestMessage {
+	bytes message = 1;
+	RequestType type = 2;
+}

@@ -1,10 +1,11 @@
 syntax = "proto3";
 package ChatProtos.Networking;
 
-import "ResponseStatus.proto";
+import "Networking/ResponseStatus.proto";
+import "Networking/RequestType.proto";
 
 message ResponseMessage {
 	bytes message = 1;
 	ResponseStatus status = 2;
+	RequestType type = 3;
 }
-// Maybe include RequestType too?

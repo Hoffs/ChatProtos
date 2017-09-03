@@ -1,0 +1,9 @@
+syntax = "proto3";
+package ChatProtos.Data;
+
+message Server {
+	string ip = 1;
+	string name = 2;
+	string uptime = 3;
+	int32 user_count = 4;
+}

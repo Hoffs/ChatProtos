@@ -1,0 +1,13 @@
+syntax = "proto3";
+package ChatProtos.Networking.Messages;
+
+message BanUserMessageRequest {
+	string user_id = 1;
+	string channel_id = 2;
+	string reason = 3;
+	int64 duration = 4;
+}
+
+message BanUserMessageResponse {
+	string user_id = 1;
+}

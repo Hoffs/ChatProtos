@@ -1,0 +1,15 @@
+syntax = "proto3";
+package ChatProtos.Networking.Messages;
+
+import "Protos/Data/Role.proto";
+
+message AddRoleMessageRequest {
+	string user_id = 1;
+	string channel_id = 2;
+	Role role = 3;
+}
+
+message AddRoleMessageResponse {
+	string user_id = 1;
+	repeated Role roles = 2;
+}
