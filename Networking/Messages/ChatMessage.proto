@@ -4,10 +4,10 @@ package ChatProtos.Networking.Messages;
 import "Data/ChatMessage.proto";
 
 message ChatMessageRequest {
-	ChatMessage message = 1;
+	ChatProtos.Data.ChatMessage message = 1;
 	string channel_id = 2;
 }
 
 message ChatMessageResponse {
-	ChatMessage message = 1;
+	ChatProtos.Data.ChatMessage message = 1;
 }

@@ -9,5 +9,5 @@ message UserInfoMessageRequest {
 
 message UserInfoMessageResponse {
 	string user_id = 1;
-	User user = 2;
+	ChatProtos.Data.User user = 2;
 }

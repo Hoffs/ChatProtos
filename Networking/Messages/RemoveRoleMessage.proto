@@ -1,15 +1,15 @@
 syntax = "proto3";
 package ChatProtos.Networking.Messages;
 
-import "Protos/Data/Role.proto";
+import "Data/Role.proto";
 
 message RemoveRoleMessageRequest {
 	string user_id = 1;
 	string channel_id = 2;
-	Role role = 3;
+	repeated ChatProtos.Data.Role roles = 3;
 }
 
 message RemoveRoleMessageResponse {
 	string user_id = 1;
-	repeated Role roles = 2;
+	repeated ChatProtos.Data.Role roles = 2;
 }
