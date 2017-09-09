@@ -3,7 +3,7 @@ package ChatProtos.Networking.Messages;
 
 message JoinChannelMessageRequest {
 	string channel_id = 1;
-	string channe_name = 2;
+	string channel_name = 2;
 }
 
 message JoinChannelMessageResponse {
