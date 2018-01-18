@@ -1,9 +1,7 @@
 syntax = "proto3";
-package ChatProtos.Networking;
-
-import "Networking/RequestType.proto";
+package HServer.Networking;
 
 message RequestMessage {
 	bytes message = 1;
-	RequestType type = 2;
+	int32 type = 2;
 }

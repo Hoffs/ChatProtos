@@ -1,5 +1,6 @@
 @echo off
 setlocal enableextensions
+rmdir "Compiled\Networking\Messages"
 md "Compiled\Networking\Messages"
 md "Compiled\Data"
 protoc -I="." --csharp_out="Compiled/Networking/" Networking/*.proto --csharp_opt=file_extension=.g.cs

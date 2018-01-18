@@ -1,5 +1,5 @@
 ﻿syntax = "proto3";
-package ChatProtos.Networking;
+package HServer.Networking;
 
 enum ResponseStatus {
 	SUCCESS = 0;

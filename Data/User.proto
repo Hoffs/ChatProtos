@@ -2,11 +2,12 @@ syntax = "proto3";
 package ChatProtos.Data;
 
 import "Data/Role.proto";
+import "Data/Channel.proto";
 
 message User {
 	string id = 1;
 	string display_name = 2;
 	string created = 3;
-	repeated string joined_channels = 4;
+	repeated Channel joined_channels = 4;
 	repeated Role roles = 5;
 }

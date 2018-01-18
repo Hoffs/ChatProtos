@@ -3,11 +3,11 @@ package ChatProtos.Networking.Messages;
 
 import "Data/User.proto";
 
-message UserInfoMessageRequest {
+message UserInfoRequest {
 	string user_id = 1;
 }
 
-message UserInfoMessageResponse {
+message UserInfoResponse {
 	string user_id = 1;
 	ChatProtos.Data.User user = 2;
 }

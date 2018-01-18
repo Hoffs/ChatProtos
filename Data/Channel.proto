@@ -4,6 +4,4 @@ package ChatProtos.Data;
 message Channel {
 	string id = 1;
 	string name = 2;
-	string created = 3;
-	repeated string joined_users = 4;
 }
