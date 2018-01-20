@@ -3,6 +3,8 @@ package ChatProtos.Networking.Messages;
 
 import "Data/Role.proto";
 
+import "Networking/Messages/ActionScope.proto";
+
 message RemoveRoleRequest {
 	string user_id = 1;
 	string community_id = 2;

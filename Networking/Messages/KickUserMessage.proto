@@ -1,7 +1,7 @@
 syntax = "proto3";
 package ChatProtos.Networking.Messages;
 
-import "Networking/Messages/PunishmentScope.proto";
+import "Networking/Messages/ActionScope.proto";
 
 message KickUserRequest {
 	string user_id = 1;
