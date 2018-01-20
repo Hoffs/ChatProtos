@@ -8,6 +8,7 @@ message RemoveRoleRequest {
 	string community_id = 2;
 	string channel_id = 3;
 	repeated ChatProtos.Data.Role roles = 4;
+	ActionScope scope = 5;
 }
 
 /* Remove role response should notify the person who is affected and the person who sent */
@@ -16,4 +17,5 @@ message RemoveRoleResponse {
 	string community_id = 2;
 	string channel_id = 3;
 	repeated ChatProtos.Data.Role roles = 4;
+	ActionScope scope = 5;
 }

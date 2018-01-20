@@ -9,7 +9,7 @@ message BanUserRequest {
 	string channel_id = 3;
 	string reason = 4;
 	int64 duration = 5;
-	PunishmentScope scope = 6;
+	ActionScope scope = 6;
 }
 
 /* Ban user response should notify the person who is affected and the person who sent */
@@ -19,5 +19,5 @@ message BanUserResponse {
 	string channel_id = 3;
 	string reason = 4;
 	int64 duration = 5;
-	PunishmentScope scope = 6;
+	ActionScope scope = 6;
 }
