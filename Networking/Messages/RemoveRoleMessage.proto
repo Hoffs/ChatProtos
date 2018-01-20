@@ -5,11 +5,15 @@ import "Data/Role.proto";
 
 message RemoveRoleRequest {
 	string user_id = 1;
-	string channel_id = 2;
-	repeated ChatProtos.Data.Role roles = 3;
+	string community_id = 2;
+	string channel_id = 3;
+	repeated ChatProtos.Data.Role roles = 4;
 }
 
+/* Remove role response should notify the person who is affected and the person who sent */
 message RemoveRoleResponse {
 	string user_id = 1;
-	repeated ChatProtos.Data.Role roles = 2;
+	string community_id = 2;
+	string channel_id = 3;
+	repeated ChatProtos.Data.Role roles = 4;
 }
