@@ -1,0 +1,14 @@
+syntax = "proto3";
+package ChatProtos.Networking.Messages;
+
+message LoginRequest {
+	string username = 1;
+	string password = 2;
+	string token = 3;
+}
+
+message LoginResponse {
+	string user_id = 1;
+	string token = 2;
+	string display_name = 3;
+}

@@ -1,0 +1,7 @@
+syntax = "proto3";
+package ChatProtos.Networking.Messages;
+
+enum ActionScope {
+    CHANNEL = 0;
+    COMMUNITY = 1;
+}

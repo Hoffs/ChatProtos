@@ -1,0 +1,21 @@
+syntax = "proto3";
+package ChatProtos.Networking.Messages;
+
+import "Networking/Messages/ActionScope.proto";
+
+message KickUserRequest {
+	string user_id = 1;
+	string community_id = 2;
+	string channel_id = 3;
+	string reason = 4;
+	ActionScope scope = 5;
+}
+
+/* Kick user response should notify the person who is affected and the person who sent */
+message KickUserResponse {
+	string user_id = 1;
+	string community_id = 2;
+	string channel_id = 3;
+	string reason = 4;
+	ActionScope scope = 5;
+}

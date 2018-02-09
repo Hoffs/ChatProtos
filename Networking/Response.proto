@@ -1,0 +1,10 @@
+syntax = "proto3";
+package HServer.Networking;
+
+import "Networking/ResponseStatus.proto";
+
+message ResponseMessage {
+	bytes message = 1;
+	ResponseStatus status = 2;
+	int32 type = 3;
+}

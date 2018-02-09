@@ -1,0 +1,13 @@
+syntax = "proto3";
+package ChatProtos.Networking.Messages;
+
+import "Data/User.proto";
+
+message UserInfoRequest {
+	string user_id = 1;
+}
+
+message UserInfoResponse {
+	string user_id = 1;
+	ChatProtos.Data.User user = 2;
+}

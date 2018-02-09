@@ -1,0 +1,7 @@
+syntax = "proto3";
+package ChatProtos.Data;
+
+message Channel {
+	string id = 1;
+	string name = 2;
+}

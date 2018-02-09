@@ -1,0 +1,10 @@
+syntax = "proto3";
+package ChatProtos.Networking.Messages;
+
+message DeleteCommunityRequest {
+    string community_id = 1;
+}
+
+message DeleteCommunityResponse {
+    string community_id = 1;
+}

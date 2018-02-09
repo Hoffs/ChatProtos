@@ -1,0 +1,15 @@
+syntax = "proto3";
+package ChatProtos.Networking.Messages;
+
+import "Data/Channel.proto";
+import "Data/ChannelInfo.proto";
+
+message ChannelInfoRequest {
+    string channel_id = 1;
+}
+
+message ChannelInfoResponse {
+    string channel_id = 1;
+    ChatProtos.Data.Channel channel = 2;
+    ChatProtos.Data.ChannelInfo channel_info = 3;
+}

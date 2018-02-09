@@ -8,3 +8,10 @@ Networking folder holds all information about messages sent from/to the client/s
 - RequestType: What kind of request is being sent/received.
 - ResponseStatus: Returns the status of sent request.
 - Request: the base request message which contain the Type and one of the `Messages` but as bytes. Client/Server makes the appropriate message from the bytes sent/received.
+
+# Usage
+
+- First get protoc binary from Google Protobuf
+- Place it in root directory
+- Call build.bat
+- Generated files should be in `Compiled/` directory

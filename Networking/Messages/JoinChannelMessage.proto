@@ -1,0 +1,11 @@
+syntax = "proto3";
+package ChatProtos.Networking.Messages;
+
+message JoinChannelRequest {
+	string channel_id = 1;
+	string password = 2;
+}
+
+message JoinChannelResponse {
+	string channel_id = 1;
+}
