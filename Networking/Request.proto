@@ -4,4 +4,5 @@ package HServer.Networking;
 message RequestMessage {
 	bytes message = 1;
 	int32 type = 2;
+	int32 nonce = 3;
 }
