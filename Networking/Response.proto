@@ -7,5 +7,5 @@ message ResponseMessage {
 	bytes message = 1;
 	ResponseStatus status = 2;
 	int32 type = 3;
-	int32 nonce = 4;
+	string nonce = 4;
 }
