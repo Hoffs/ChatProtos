@@ -1,0 +1,15 @@
+syntax = "proto3";
+package ChatProtos.Networking.Messages;
+
+import "Data/Community.proto";
+import "Data/CommunityInfo.proto";
+
+message CommunityInfoRequest {
+    string community_id = 1;
+}
+
+message CommunityInfoResponse {
+    string community_id = 1;
+    repeated ChatProtos.Data.Community community = 2;
+    ChatProtos.Data.CommunityInfo channel_info = 3;
+}
