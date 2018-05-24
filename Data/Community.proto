@@ -1,5 +1,5 @@
 syntax = "proto3";
-package ChatProtos.Data.Community;
+package ChatProtos.Data;
 
 import "Data/Channel.proto";
 
